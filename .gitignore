@@ -1,0 +1,12 @@
+# Virtual Environments & Large Models
+venv/
+models/
+
+# Databases & Data
+data/
+*.db
+
+# Old / Scratch Files
+genre_prediction_OLD.ipynb
+genre_prediction_FINAL_*.ipynb
+peek.py
