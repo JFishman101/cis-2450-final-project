@@ -1,12 +1,33 @@
-# Virtual Environments & Large Models
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environment
 venv/
-models/
+.venv/
+env/
 
-# Databases & Data
-data/
-*.db
+# Dashboard runtime cache (rebuilt on launch)
+dashboard_cache.joblib
 
-# Old / Scratch Files
-genre_prediction_OLD.ipynb
-genre_prediction_FINAL_*.ipynb
-peek.py
+# Large data file (>1GB, share via Drive)
+data/song_data.db
+
+# Model files >100MB (GitHub limit) — share via Drive
+models/rf_model.joblib
+models/rf_tuned.joblib
+models/all_classifier_results.joblib
+models/notebook_state.joblib
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+EOF
+echo "wrote .gitignore"

@@ -1,0 +1,27 @@
+# CIS 2450 Final Project — Python dependencies
+# Install with: python -m pip install -r requirements.txt
+# Tested with Python 3.12 in WSL Ubuntu.
+
+# Data + storage
+duckdb==1.5.2
+polars==1.40.1
+pandas==3.0.2
+numpy==2.4.4
+pyarrow==24.0.0
+
+# ML stack
+scikit-learn==1.8.0
+imbalanced-learn==0.14.1
+scipy==1.17.1
+joblib==1.5.3
+
+# Notebook visualization
+matplotlib==3.10.9
+seaborn==0.13.2
+psutil==7.2.2
+ipykernel
+
+# Dashboard
+dash==4.1.0
+dash-bootstrap-components==2.0.4
+plotly==6.7.0
