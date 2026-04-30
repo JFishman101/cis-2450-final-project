@@ -28,7 +28,7 @@ Linear models won this problem — Random Forest tuned hit 82.5% accuracy, AdaBo
 ```
 .
 ├── README.md                 ← this file
-├── extract_data.ipynb        ← ETL pipeline (DO NOT RUN — reference only)
+├── extract_data.ipynb        ← ETL pipeline (Please see warning inside notebook)
 ├── genre_prediction.ipynb    ← main analysis notebook (Sections 1–9)
 ├── dashboard.py              ← interactive Plotly Dash dashboard
 ├── data/
@@ -56,7 +56,7 @@ Linear models won this problem — Random Forest tuned hit 82.5% accuracy, AdaBo
 
 The repo has three main entry points and they are run in different ways:
 
-- **`extract_data.ipynb`** — the ETL pipeline. **Do not run this notebook.** It documents how `data/song_data.db` was originally built from Kaggle's 550K+ Spotify Songs CSV plus enrichment from the Deezer API. The Deezer API loop in Step 2c takes several days to complete; the database is already provided in `data/`, so this notebook is included only as a record of the data pipeline.
+- **`extract_data.ipynb`** — the ETL pipeline. **Please read the warning inside the notebook before running.** It documents how `data/song_data.db` was originally built from Kaggle's 550K+ Spotify Songs CSV plus enrichment from the Deezer API. The Deezer API loop in Step 2c takes several days to complete; the database is already provided in `data/`, so this notebook is included only as a record of the data pipeline.
 - **`genre_prediction.ipynb`** — the analysis notebook. Open this in VS Code and run cells top-to-bottom. This is what produces the trained models in `models/`.
 - **`dashboard.py`** — the interactive dashboard. Run with `python dashboard.py` from the project root. It loads the artifacts produced by the analysis notebook and serves an interactive web UI at http://127.0.0.1:8050.
 
