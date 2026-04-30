@@ -1,6 +1,5 @@
 # CIS 2450 Final Project — Python dependencies
 # Install with: python -m pip install -r requirements.txt
-# Tested with Python 3.12 in WSL Ubuntu.
 
 # Data + storage
 duckdb==1.5.2
