@@ -31,3 +31,7 @@ Thumbs.db
 *.swp
 EOF
 echo "wrote .gitignore"
+
+
+
+package_submission.sh
