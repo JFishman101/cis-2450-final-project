@@ -144,6 +144,10 @@ Polars, SQL/DuckDB, Joins, Relational database, Supervised Learning, Text repres
 
 `RANDOM_SEED = 42` throughout. Train/test split, SMOTE, K-Means, RandomizedSearchCV, and all model fits use this seed. The full pipeline reproduces from a fresh kernel by running the notebook top-to-bottom.
 
+## Data Sources
+- Kaggle Spotify 550K songs: https://www.kaggle.com/datasets/serkantysz/550k-spotify-songs-audio-lyrics-and-genres/data
+- Deezer API: https://api.deezer.com/
+
 ## Credits
 
 - Upstream ETL pipeline (Kaggle ⨝ Deezer record linking, schema cleaning) — David Jorge-Bates
